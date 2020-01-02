@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC2BB9AD-810D-4F11-A090-AC76F29B40C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AK838</RootNamespace>
+    <AssemblyName>AK838</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42030,42104,42108,42109,42353,42354,42355</NoWarn>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42030,42104,42108,42109,42353,42354,42355</NoWarn>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\01 Temperature.vb" />
+    <Compile Include="Commands\02 Run.vb" />
+    <Compile Include="Commands\03 FlowMeterFill.vb" />
+    <Compile Include="Commands\04 Fill.vb" />
+    <Compile Include="Commands\05 CallOperator.vb" />
+    <Compile Include="Commands\06 StopPump.vb" />
+    <Compile Include="Commands\07 StartPump.vb" />
+    <Compile Include="Commands\08 PressureIn.vb" />
+    <Compile Include="Commands\09 PressureOut.vb" />
+    <Compile Include="Commands\11 BatchWash.vb" />
+    <Compile Include="Commands\12 Rinse.vb" />
+    <Compile Include="Commands\13 HiLowRinse.vb" />
+    <Compile Include="Commands\14 Drain.vb" />
+    <Compile Include="Commands\16 CoolRinse.vb" />
+    <Compile Include="Commands\17 AnalogFill.vb" />
+    <Compile Include="Commands\18 Recall Level.vb" />
+    <Compile Include="Commands\19 Memory Fill.vb" />
+    <Compile Include="Commands\20 Sample.vb" />
+    <Compile Include="Commands\21 TotalWeight.vb" />
+    <Compile Include="Commands\22 LiquidRatio.vb" />
+    <Compile Include="Commands\24 MainTankLevelCalibrate.vb" />
+    <Compile Include="Commands\31 Load.vb" />
+    <Compile Include="Commands\32 PowerDrain.vb" />
+    <Compile Include="Commands\33 Unload.vb" />
+    <Compile Include="Commands\34 ManualAddDye.vb" />
+    <Compile Include="Commands\35 ManualAddChemical.vb" />
+    <Compile Include="Commands\41 Call LA-302.vb" />
+    <Compile Include="Commands\42 Wait LA-302.vb" />
+    <Compile Include="Commands\43 Call LA-252.vb" />
+    <Compile Include="Commands\44 Wait LA-252.vb" />
+    <Compile Include="Commands\45 Call LA-301P.vb" />
+    <Compile Include="Commands\46 Wait LA-301P.vb" />
+    <Compile Include="Commands\51 DiluteAdd B.vb" />
+    <Compile Include="Commands\52 DiluteAdd C.vb" />
+    <Compile Include="Commands\54 B TankVolumePrepare.vb" />
+    <Compile Include="Commands\55 C TankVolumePrepare.vb" />
+    <Compile Include="Commands\56 AddDoseB.vb" />
+    <Compile Include="Commands\57 AddDoseC.vb" />
+    <Compile Include="Commands\58 WashBTank.vb" />
+    <Compile Include="Commands\61 ParallelDiluteAdd B.vb" />
+    <Compile Include="Commands\62 ParallelDiluteAdd C.vb" />
+    <Compile Include="Commands\64 B ParallelPrepare.vb" />
+    <Compile Include="Commands\65 C ParallelPrepare.vb" />
+    <Compile Include="Commands\66 BDoseParallel.vb" />
+    <Compile Include="Commands\36 CallCheckPh.vb" />
+    <Compile Include="Commands\67 CDoseParallel.vb" />
+    <Compile Include="Commands\73 PhParmeter.vb" />
+    <Compile Include="Commands\74 PhControlFast.vb" />
+    <Compile Include="Commands\75 PhControlTemp.vb" />
+    <Compile Include="Commands\76 PhControlTime.vb" />
+    <Compile Include="Commands\77 PhControlAdjust.vb" />
+    <Compile Include="Commands\78 PhControlCleck.vb" />
+    <Compile Include="Commands\79 PhWash.vb" />
+    <Compile Include="Commands\80 PhControlTime.vb" />
+    <Compile Include="Commands\81 PhTestMachines.vb" />
+    <Compile Include="Common\CallLA-252.vb" />
+    <Compile Include="Common\CallLA-302.vb" />
+    <Compile Include="Common\Ph76Time.vb" />
+    <Compile Include="Common\PhCheck.vb" />
+    <Compile Include="Common\PhCheckError.vb" />
+    <Compile Include="Common\PhCirculateRun.vb" />
+    <Compile Include="Common\PhControl.vb" />
+    <Compile Include="Common\PhWash.vb" />
+    <Compile Include="Common\StTable.vb" />
+    <Compile Include="Common\TankBMix.vb" />
+    <Compile Include="Common\TankCMix.vb" />
+    <Compile Include="ControlCode\Alarms.vb" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="System\Control.vb" />
+    <Compile Include="ControlCode\ControlCode.vb" />
+    <Compile Include="Common\Enums.vb" />
+    <Compile Include="ControlCode\IO.vb" />
+    <Compile Include="System\LA60B.vb" />
+    <Compile Include="Mimic\Mimic.designer.vb">
+      <DependentUpon>Mimic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mimic\Mimic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mimic\MimicControls.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ControlCode\Parameters.vb" />
+    <Compile Include="System\Ports.vb" />
+    <Compile Include="Common\PressureOut.vb" />
+    <Compile Include="Common\Recipe.vb" />
+    <Compile Include="Common\Support.vb" />
+    <Compile Include="Common\TemperatureControl.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mimic\Mimic.resx">
+      <DependentUpon>Mimic.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlCode\app.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
